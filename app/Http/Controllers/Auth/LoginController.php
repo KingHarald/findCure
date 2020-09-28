@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    /*
+    /* 
     |--------------------------------------------------------------------------
     | Login Controller
     |--------------------------------------------------------------------------
@@ -36,7 +36,7 @@ class LoginController extends Controller
                 return '/admin/adminDashboard';
                 break;
                  case '2':
-                 return '/doctor/doctorDashboard';
+                 return '/doctor';
                  break;
                 default:
                 return '/login';

@@ -15,7 +15,7 @@ class RoleController extends Controller
      */
     public function index()
     {
-        return view('admin.Role.index')->with('roles', Role::all());
+        return view('backend.Role.index')->with('roles', Role::all());
     }
 
     /**
@@ -25,7 +25,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('admin.Role.create');
+        return view('backend.Role.create');
     }
 
     /**
@@ -64,7 +64,7 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.Role.edit')->with('role', Role::findOrFail($id));
+        return view('backend.Role.edit')->with('role', Role::findOrFail($id));
     }
 
     /**

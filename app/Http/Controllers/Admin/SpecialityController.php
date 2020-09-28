@@ -16,7 +16,7 @@ class SpecialityController extends Controller
      */
     public function index()
     {
-        return view('admin.speciality.index')->with('speciality', Speciality::all());
+        return view('backend.speciality.index')->with('speciality', Speciality::all());
     }
 
     /**
@@ -26,7 +26,7 @@ class SpecialityController extends Controller
      */
     public function create()
     {
-        return view('admin.speciality.create');
+        return view('backend.speciality.create');
     }
 
     /**
@@ -71,7 +71,7 @@ class SpecialityController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.speciality.edit')->with('speciality', Speciality::findOrFail($id));
+        return view('backend.speciality.edit')->with('speciality', Speciality::findOrFail($id));
     }
 
     /**

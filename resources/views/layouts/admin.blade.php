@@ -6,8 +6,8 @@
   <!-- title page -->
 	<title>@yield('title', 'Admin')</title>
 
-	<!-- including css -->
-	@include('admin.requires.stylelinks')
+	<!-- including css --> 
+	@include('backend..requires.stylelinks')
 
 
 </head>
@@ -15,21 +15,21 @@
       <div class="main-wrapper">
 
       	<!-- including header -->
-      	@include('admin.requires.header')
+      	@include('backend.requires.header')
 
       	<!-- including sidebar -->
-      	@include('admin.requires.sidenav')
+      	@include('backend.requires.sidenav')
 
 
       	@yield('content')
 
       	<!-- including footer -->
-      	@include('admin.requires.footer')
+      	@include('backend.requires.footer')
 
       </div>
 
       <!--including Javascript links -->
-      @include('admin.requires.scriptlinks')
+      @include('backend.requires.scriptlinks')
 
       
 </body>
