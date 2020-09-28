@@ -31,7 +31,7 @@ Route::Resource('adminRole', 'RoleController')->middleware('verified');
 
 //  ** Doctor Route **  //
 Route::prefix('/doctor')->namespace('Doctor')->group(function() {
-Route::Resource('doctorDashboard', 'DoctorController')->middleware('verified');
+Route::Resource('/', 'DoctorController')->middleware('verified');
 
 });
 
